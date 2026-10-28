@@ -1,119 +1,257 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATC De Mexico | Soluciones Térmicas Industriales | Alta Precisión</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <!-- Iconos de Google para un aspecto limpio e industrial -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATC de México | Control Térmico e Instrumentación Industrial</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Fondo animado de partículas de calor con puro CSS -->
-    <div class="fire-background">
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header>
+    <div class="brand-container">
+      <img src="ATC.jpg" alt="ATC de México Logo" class="logo-img">
+      <div class="brand-title">
+        <h1>ATC DE MÉXICO</h1>
+        <p>INGENIERÍA EN CONTROL TÉRMICO E INSTRUMENTACIÓN</p>
+      </div>
     </div>
 
-    <!-- Encabezado / Navegación -->
-   <header>
-        <div class="logo">ATC DE <span>MÉXICO</span></div>
-        <nav>
-            <a href="#productos">Productos</a>
-            <a href="#nosotros">Tecnología</a>
-        </nav>
-        <!-- Enlace directo a WhatsApp en el Navbar -->
-        <a href="https://wa.me/8125687901" class="btn-whatsapp nav-ws" target="_blank">
-            Cotizar Ahora
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#catalogo" class="nav-item">Catálogo</a></li>
+        <li><a href="#cotizador" class="nav-item">Cotizador</a></li>
+        <li><a href="#contacto" class="nav-item">Contacto</a></li>
+      </ul>
+
+      <!-- BOTÓN WHATSAPP HEADER CON ICONO SVG -->
+      <a href="https://wa.me/528125687901?text=Hola%20ATC%20de%20M%C3%A9xico,%20requiero%20informaci%C3%B3n%20sobre%20sus%20productos." target="_blank" class="header-wa-btn">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>WhatsApp: 81 2568 7901</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- BANNER PRINCIPAL FORMAL -->
+  <div class="hero-banner">
+    <div class="hero-container">
+      <img src="ATC.jpg" alt="Logo Principal ATC" class="hero-main-logo">
+      <div class="hero-text-block">
+        <span class="hero-badge">FABRICACIÓN & ASISTENCIA TÉCNICA</span>
+        <h2>SOLUCIONES EN SISTEMAS Y CONTROL TÉRMICO</h2>
+        <p>Comercialización, fabricación e instrumentación para la industria. Asistencia especializada y fabricación de urgencias en un plazo máximo de 48 horas.</p>
+        <p class="hero-contact-sub">Atención Directa: <strong>Jesús Moisés De León López</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATÁLOGO PRINCIPAL -->
+  <main class="container" id="catalogo">
+    <div class="section-header">
+      <h2>CATÁLOGO DE PRODUCTOS INDUSTRIALES</h2>
+      <div class="line-accent"></div>
+    </div>
+
+    <div class="grid-products">
+
+      <!-- PRODUCTO 1 -->
+      <article class="card">
+        <div class="card-image-wrapper">
+          <svg class="product-illustration" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="45" width="120" height="30" rx="4" fill="#2a2a32" stroke="#d9411e" stroke-width="2"/>
+            <circle cx="45" cy="60" r="6" fill="#f27d16"/>
+            <circle cx="125" cy="60" r="6" fill="#f27d16"/>
+            <line x1="145" y1="50" x2="180" y2="50" stroke="#d9411e" stroke-width="3"/>
+            <line x1="145" y1="70" x2="180" y2="70" stroke="#d9411e" stroke-width="3"/>
+          </svg>
+        </div>
+        <span class="card-tag">CALEFACCIÓN INDUSTRIAL</span>
+        <h3>Resistencias Tubulares y Bandas</h3>
+        <p>Tubulares aletadas, bandas de mica y cerámica, tiras, cartuchos y unidades de inmersión (tipo pato o con brida) para líquidos o gases.</p>
+        <ul class="card-features">
+          <li>• Bandas de Mica, Cerámica, Tira y Pasta</li>
+          <li>• Fundiciones en Aluminio, Latón y Bronce</li>
+        </ul>
+        <a href="https://wa.me/528125687901?text=Hola,%20me%20interesa%20cotizar%20Resistencias%20Tubulares/Bandas" class="card-btn" target="_blank">Cotizar Opción</a>
+      </article>
+
+      <!-- PRODUCTO 2 -->
+      <article class="card">
+        <div class="card-image-wrapper">
+          <svg class="product-illustration" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="30" width="140" height="60" rx="6" fill="#353540" stroke="#f27d16" stroke-width="2"/>
+            <line x1="40" y1="50" x2="160" y2="50" stroke="#d9411e" stroke-width="3"/>
+            <line x1="40" y1="70" x2="160" y2="70" stroke="#d9411e" stroke-width="3"/>
+          </svg>
+        </div>
+        <span class="card-tag">INFRARROJOS Y MOLDES</span>
+        <h3>Infrarrojas Elstein y Colada Caliente</h3>
+        <p>Cerámicas tipo Elstein (EHL/EHM con y sin termopar), microtubulares para colada caliente, tubulares flexibles para manifold y controladores de 4 a 24 zonas.</p>
+        <ul class="card-features">
+          <li>• Infrarrojas 245x60mm y 122x60mm</li>
+          <li>• Tarjetas para controlador de 15 Amp</li>
+        </ul>
+        <a href="https://wa.me/528125687901?text=Hola,%20me%20interesa%20cotizar%20Infrarrojas/Colada%20Caliente" class="card-btn" target="_blank">Cotizar Opción</a>
+      </article>
+
+      <!-- PRODUCTO 3 -->
+      <article class="card">
+        <div class="card-image-wrapper">
+          <svg class="product-illustration" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="50" y="20" width="100" height="80" rx="6" fill="#22222a" stroke="#d9411e" stroke-width="2"/>
+            <rect x="65" y="35" width="70" height="25" fill="#353540" stroke="#f27d16" stroke-width="1"/>
+            <circle cx="75" cy="80" r="5" fill="#d9411e"/>
+            <circle cx="100" cy="80" r="5" fill="#d9411e"/>
+            <circle cx="125" cy="80" r="5" fill="#d9411e"/>
+          </svg>
+        </div>
+        <span class="card-tag">INSTRUMENTACIÓN</span>
+        <h3>Pirómetros y Termostatos</h3>
+        <p>Controles digitales de temperatura DIN (48x48, 48x96, 96x96), salidas de 3A y 30A para manejo directo de carga y termostatos electrónicos de 2 polos de 30A.</p>
+        <ul class="card-features">
+          <li>• Precisión de rango hasta 1200°C</li>
+          <li>• Termopares flexibles J, K, T, E en Fibra/Teflón</li>
+        </ul>
+        <a href="https://wa.me/528125687901?text=Hola,%20me%20interesa%20cotizar%20Pir%C3%B3metros/Instrumentaci%C3%B3n" class="card-btn" target="_blank">Cotizar Opción</a>
+      </article>
+
+      <!-- PRODUCTO 4 -->
+      <article class="card">
+        <div class="card-image-wrapper">
+          <svg class="product-illustration" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="60" r="40" fill="none" stroke="#f27d16" stroke-width="8"/>
+            <circle cx="100" cy="60" r="25" fill="none" stroke="#d9411e" stroke-width="5"/>
+          </svg>
+        </div>
+        <span class="card-tag">CONDUCTORES DE ALTA TEMP</span>
+        <h3>Cable de Níquel 100% y Nicrom</h3>
+        <p>Cables de Níquel Puro para 500°C y 600V desde calibres 22 AWG hasta 8 AWG. Alambre Nicrom redondo de calibres 19 a 27 AWG para fabricación de resistencias.</p>
+        <ul class="card-features">
+          <li>• Níquel Puro 100% (500°C / 600V)</li>
+          <li>• Nicrom Redondo para Alta Resistencia</li>
+        </ul>
+        <a href="https://wa.me/528125687901?text=Hola,%20me%20interesa%20cotizar%20Cable%20de%20N%C3%ADquel/Nicrom" class="card-btn" target="_blank">Cotizar Opción</a>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- MÓDULO COTIZADOR INTERACTIVO -->
+  <section class="container" id="cotizador">
+    <div class="cotizador-box">
+      <div class="cotizador-header">
+        <img src="ATC.jpg" alt="Logo Cotizador ATC" class="cotizador-logo">
+        <div>
+          <h2>COTIZADOR EN LÍNEA DE EQUIPOS TÉRMICOS</h2>
+          <p>Selecciona las especificaciones requeridas y envía tu solicitud directa por WhatsApp.</p>
+        </div>
+      </div>
+
+      <form id="quoteForm" class="cotizador-form" onsubmit="generarCotizacionWhatsApp(event)">
+        <div class="form-group">
+          <label for="producto">Tipo de Producto:</label>
+          <select id="producto" required>
+            <option value="Resistencia Tubular / Aletada">Resistencia Tubular / Aletada</option>
+            <option value="Resistencia Banda Mica / Cerámica">Resistencia Tipo Banda (Mica / Cerámica)</option>
+            <option value="Infrarroja Tipo Elstein">Infrarroja Cerámica Tipo Elstein</option>
+            <option value="Pirómetro Digital / Control DIN">Pirómetro Digital / Control DIN</option>
+            <option value="Termopar Flexible J/K/T/E">Termopar Flexible J / K / T / E</option>
+            <option value="Cable de Níquel 100% Puro (500°C)">Cable de Níquel 100% Puro (500°C)</option>
+            <option value="Controlador Colada Caliente">Controlador de Colada Caliente (Hot Runner)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="voltaje">Voltaje (V):</label>
+            <input type="text" id="voltaje" placeholder="Ej: 120V, 220V, 440V" required>
+          </div>
+          <div class="form-group">
+            <label for="potencia">Potencia (Watts/Amperes):</label>
+            <input type="text" id="potencia" placeholder="Ej: 1000W, 15A" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="medidas">Dimensiones / Calibre / Largo:</label>
+            <input type="text" id="medidas" placeholder="Ej: 245x60mm, Calibre 14 AWG, 1/2 pulg x 10 pulg" required>
+          </div>
+          <div class="form-group">
+            <label for="cantidad">Cantidad de Piezas:</label>
+            <input type="number" id="cantidad" min="1" value="1" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="comentarios">Detalles Adicionales o Tipo de Terminal:</label>
+          <textarea id="comentarios" rows="3" placeholder="Indica tipo de terminal, aplicación, rosca o si requieres servicio de urgencia en 48 hrs..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-quote">
+          ENVIAR COTIZACIÓN A WHATSAPP
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO DIRECTO -->
+  <section class="container" id="contacto">
+    <div class="contact-card">
+      <h2>CONTACTO DIRECTO Y ATENCIÓN A CLIENTES</h2>
+      <p class="contact-person">Atención Personalizada: <strong>Jesús Moisés De León López</strong></p>
+
+      <div class="phone-box">
+        <a href="https://wa.me/528125687901?text=Hola,%20requiero%20atenci%C3%B3n%20para%20una%20cotizaci%C3%B3n" class="phone-link" target="_blank">
+          📲 Teléfono Principal: <strong>81 2568 7901</strong>
         </a>
-    </header>
+        <a href="tel:8126867005" class="phone-link emergency">
+          🚨 Emergencias (48h): <strong>81 2686 7005</strong>
+        </a>
+      </div>
 
-    <!-- Sección Hero (Principal) -->
-    <section class="hero">
-        <div class="hero-content">
-            <span class="badge">Poder y Control Absoluto</span>
-            <h1>Ingeniería Térmica de Alto Rendimiento</h1>
-            <p>Fabricamos y distribuimos sistemas de calentamiento industrial y control de precisión extrema. Diseñados para resistir las condiciones más severas.</p>
-            <div class="hero-buttons">
-                <a href="#productos" class="btn-secondary">Ver Catálogo</a>
-                <a href="https://wa.me/TU_NUMERO_AQUI" class="btn-primary glow-effect" target="_blank">Asesoría Inmediata por WhatsApp</a>
-            </div>
-        </div>
-    </section>
+      <div class="contact-details">
+        <p>📧 Correos: <strong>atcmex@hotmail.com</strong> | <strong>atcmex@gmail.com</strong></p>
+        <p>📍 Dirección: Narciso Mendoza #5935, Col. Constituyentes del 57, Monterrey, N.L.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sección de Productos Destacados -->
-    <section id="productos" class="products-section">
-        <h2 class="section-title">Componentes de Alta Gama</h2>
-        
-        <div class="products-grid">
-            
-            <!-- Tarjeta 1: Resistencias Eléctricas -->
-            <div class="card">
-                <div class="card-glow"></div>
-                <div class="card-content">
-                    <div class="icon-placeholder">⚡</div>
-                    <h3>Resistencias Eléctricas</h3>
-                    <p>Sistemas integrales de calentamiento industrial por inmersión, tubulares y de sobremedida con aleaciones de la más alta durabilidad.</p>
-                </div>
-            </div>
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2026 <span>ATC de México</span>. Todos los derechos reservados.</p>
+    <p class="sub-footer">Fabricación, Comercialización y Asistencia Técnica en Control Térmico.</p>
+  </footer>
 
-            <!-- Tarjeta 2: Termopares -->
-            <div class="card">
-                <div class="card-glow"></div>
-                <div class="card-content">
-                    <div class="icon-placeholder">🌡️</div>
-                    <h3>Termopares y Sensores</h3>
-                    <p>Sensores de temperatura tipo J, K, T y RTD (Pt100). Precisión calibrada para lecturas en tiempo real bajo entornos críticos.</p>
-                </div>
-            </div>
+  <!-- SCRIPT COTIZADOR -->
+  <script>
+    function generarCotizacionWhatsApp(event) {
+      event.preventDefault();
+      
+      const producto = document.getElementById('producto').value;
+      const voltaje = document.getElementById('voltaje').value;
+      const potencia = document.getElementById('potencia').value;
+      const medidas = document.getElementById('medidas').value;
+      const cantidad = document.getElementById('cantidad').value;
+      const comentarios = document.getElementById('comentarios').value;
 
-            <!-- Tarjeta 3: Controles Modotrol -->
-            <div class="card">
-                <div class="card-glow"></div>
-                <div class="card-content">
-                    <div class="icon-placeholder">🎛️</div>
-                    <h3>Controles Modotrol</h3>
-                    <p>Sistemas avanzados de automatización y modulación de flujo/temperatura para un control óptimo del calor industrial.</p>
-                </div>
-            </div>
+      let mensaje = `*SOLICITUD DE COTIZACIÓN - ATC DE MÉXICO*%0A%0A`;
+      mensaje += `*Producto:* ${encodeURIComponent(producto)}%0A`;
+      mensaje += `*Voltaje:* ${encodeURIComponent(voltaje)}%0A`;
+      mensaje += `*Potencia:* ${encodeURIComponent(potencia)}%0A`;
+      mensaje += `*Dimensiones/Calibre:* ${encodeURIComponent(medidas)}%0A`;
+      mensaje += `*Cantidad:* ${encodeURIComponent(cantidad)} Pza(s)%0A`;
+      if(comentarios) {
+        mensaje += `*Notas/Terminal:* ${encodeURIComponent(comentarios)}%0A`;
+      }
 
-            <!-- Tarjeta 4: Resistencias Tipo Banda -->
-            <div class="card">
-                <div class="card-glow"></div>
-                <div class="card-content">
-                    <div class="icon-placeholder">⭕</div>
-                    <h3>Resistencias tipo Banda</h3>
-                    <p>Ideales para extrusoras e inyectoras de plástico. Transferencia térmica uniforme con aislamiento de mica o cerámica de alta densidad.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Sección de Enfoque Comercial / Cierre -->
-    <section id="nosotros" class="cta-section">
-        <div class="cta-box">
-            <h2>¿Listo para optimizar tu línea de producción?</h2>
-            <p>No usamos intermediarios ni carritos automatizados complejos. Creemos en la atención personalizada. Envíanos las especificaciones de tu proyecto y un ingeniero especialista te cotizará de forma directa.</p>
-            <a href="https://wa.me/8125687901" class="btn-whatsapp-large" target="_blank">
-                <span>💬 Conectar por WhatsApp Técnico</span>
-            </a>
-        </div>
-    </section>
-
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2026 THERMOCORE Industrial. Todos los derechos reservados.</p>
-        <p>Diseño de Ingeniería Térmica Exclusiva.</p>
-    </footer>
-
-    <!-- Botón Flotante Fijo de WhatsApp (Efecto Pulse Constante) -->
-    <a href="https://wa.me/TU_NUMERO_AQUI" class="whatsapp-fixed-btn" target="_blank" title="Escríbenos por WhatsApp">
-        <span class="ws-icon">💬</span>
-    </a>
+      const whatsappURL = `https://wa.me/528125687901?text=${mensaje}`;
+      window.open(whatsappURL, '_blank');
+    }
+  </script>
 
 </body>
 </html>
